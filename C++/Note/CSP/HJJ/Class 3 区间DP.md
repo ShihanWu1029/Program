@@ -42,9 +42,9 @@ $A_{i\times j} \times B_{m \times n} 的计算量 = i \times n \times j (or \ m)
 
 状态转移方程：
 
-$$ dp_{i,j} = \operatorname{min} \{ dp_{i,k} + dp_{k+1,j}+m_{i-1} \times m_k \times m_{j} \}\ \ (i \le k \lt j) $$
+$$ dp_{i,j} = min \{ dp_{i,k} + dp_{k+1,j}+m_{i-1} \times m_k \times m_{j} \}\ \ (i \le k \lt j) $$
 
-时间复杂度为$\operatorname{O}(n^3)$
+时间复杂度为 $O(n^3)$
 
 伪代码：
 
