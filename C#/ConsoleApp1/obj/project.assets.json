@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\iNeve\\Desktop\\C#Studyingg\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectUniqueName": "C:\\Users\\iNeve\\Desktop\\Program\\C#\\ConsoleApp1\\ConsoleApp1.csproj",
       "projectName": "ConsoleApp1",
-      "projectPath": "C:\\Users\\iNeve\\Desktop\\C#Studyingg\\ConsoleApp1\\ConsoleApp1.csproj",
+      "projectPath": "C:\\Users\\iNeve\\Desktop\\Program\\C#\\ConsoleApp1\\ConsoleApp1.csproj",
       "packagesPath": "C:\\Users\\iNeve\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\iNeve\\Desktop\\C#Studyingg\\ConsoleApp1\\obj\\",
+      "outputPath": "C:\\Users\\iNeve\\Desktop\\Program\\C#\\ConsoleApp1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\iNeve\\AppData\\Roaming\\NuGet\\NuGet.Config"
