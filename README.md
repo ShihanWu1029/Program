@@ -1,3 +1,7 @@
-# For Programmiing studying
+# Responsitory "Program"
 
-Hi!
+- Owner: Andy Wu
+
+- Lang: C++,C#,HTML,Markdown
+
+- Edited In Visual Studio Code
