@@ -1,27 +1,16 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
 
-vector<int> stone_heap;
-int n,temp;
+int dp[3][26];
 int main(){
-    cin>>n;
-    for(int i=0;i<n;i++){
-        cin>>temp;
-        stone_heap.push_back(temp);
+    for(int i=0;i<=9;i++) dp[0][i]=1;
+    for(int i=1;i<=2;i++){
+        for(int j=0;j<=25;j++){
+            // dp[i][j] = dp[i-1][j] + dp[i][j-1];
+            for(int k=0;k<=9;k++){
+                dp[i][j]+=dp[i-1][j-k];
+            }
+        }
     }
-    vector<int> dp(n);
-    for(int i=0;i<n;i++){
-        
-    }
-    cout<<dp[n-1];
+    cout<<dp[2][25];
 }
-
-/**
- * 4
- * 4 5 9 4
- * 
- * 4 5 -> sum = 9
- * 9 4 -> sum = 13
- * 13 9 -> sum= 21
- * 
- */
