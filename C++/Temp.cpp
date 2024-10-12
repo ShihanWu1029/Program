@@ -10,8 +10,8 @@ int main(){
     for(int i=1;i<=2;i++){
         for(int j=0;j<=25;j++){
             // dp[i][j] = dp[i-1][j] + dp[i][j-1];
-            for(int k=0;k<=9;k++){ 
-                dp[i][j]+=dp[i-1][j-k];
+            for(int k=0;k<=9;k++){
+                 
             }
         }
     }

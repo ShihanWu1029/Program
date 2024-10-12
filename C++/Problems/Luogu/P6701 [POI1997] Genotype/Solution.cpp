@@ -9,7 +9,7 @@ int main(){
         string ch;
         cin>>ch;
         Merge[ch[1]-'A'+1][ch[2]-'A'+1]|=1<<(ch[0]-'A'+1);
-    }
+    }   
     cin>>k;
     while(k--){
         memset(zt, 0, sizeof(zt));
