@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 1 - HTML Skills Showcase(Simple)</title>
+    <style>
+        body{
+            font-family: 'Times New Roman';
+        }
+        h1{
+            color: rgb(56,110,227);
+        }
+        .add{
+            color: rgb(103,116,137);
+        }
+        a{
+            color: blue;
+        }
+        span{
+            width: 50px; padding: 0 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="top">Unit 1 — HTML Skills Showcase (Simple)</h1>
+    <p class="add">This single page demonstrates the core tags and ideas from Unit 1.</p>
+
+    <p>
+        <strong>Jump to:</strong>
+        <a href="#f">Formatting</a> | 
+        <a href="#l">Links</a> | 
+        <a href="#i">Images & Copyright</a> | 
+        <a href="#li">Lists</a> | 
+        <a href="#t">Tables</a> | 
+        <a href="#s">Styling & Colors</a> | 
+        <a href="#su">Summary</a>
+    </p>
+    <hr>
+
+    <h2 id="f">1) Formatting Text</h2>
+    <p>Use <strong>&lt;strong&gt;</strong> for importance and <em>&lt;em&gt;</em> for emphasis. You can <u>underline</u> text, and add a line break like this: first line<br>
+second line.</p>
+    <h3>Mini Dictionary (dl/dt/dd)</h3>
+    <dl>
+        <dt><strong>HTML</strong></dt>
+        <dd>The language used to structure web pages with tags.</dd>
+        <dt><strong>Element</strong></dt>
+        <dd>A building block of a page, like a paragraph, link, or image.</dd>
+        <dt><strong>Attribute</strong></dt>
+        <dd>Extra info on an element (for example, the src of an image).</dd>
+    </dl>
+    <p class="add">Related tasks: 1.3.1–1.3.7</p>
+    
+    <h2 id="l">2) Links & Bookmarks</h2>
+    External link: <a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a><br>
+    Internal bookmark: <a href="#i">Go to the Images section</a>.
+    <p class="add">Related tasks: 1.4.1–1.4.5</p>
+
+    <h2 id="i">3) Images & Copyright</h2>
+    Use the <code>&lt;img&gt;</code> tag with a <code>src</code> and descriptive <code>alt</code> text.<br>
+    <img src="img1.png" alt="" width="360" height="240" >
+    <br>
+    Linked image:
+    <a href="https://www.google.com"><img src="img2.png" alt="" width="200"></a>
+    <p class="add">Related tasks: 1.5.1–1.5.7, 1.6.1–1.6.8</p>
+
+    <h2 id="li">4) Lists</h2>
+    <h3>Unordered List</h3>
+    <ul>
+        <li>Milk</li>
+        <li>Bread</li>
+        <li>Eggs</li>
+        <li>Apples</li>
+    </ul>
+    <h3>Ordered List</h3>
+    <ol>
+        <li>Great Wall</li>
+        <li>YelloStone</li>
+        <li>Galápagos</li>
+    </ol>
+    <p class="add">Related tasks: 1.7.1–1.7.6</p>
+
+    <h2 id="t">5) Tables</h2>
+    <p>Use tables for tabular data. Include a header row with &lt;th&gt;.</p>
+    <table border="1" style="border-collapse: collapse; border-color: rgb(204,213,223); width: 100%; text-align: left;">
+        <tr style="background-color: rgb(242,245,249);">
+            <th>Name</th>
+            <th>City</th>
+            <th>Favorite Sport</th>
+            <th>Contact</th>
+        </tr>
+        <tr>
+            <td>Alex</td>
+            <td>Bogotá</td>
+            <td>Soccer</td>
+            <td><a href="mailto:alex@example.com">alex@example.com</a></td>
+        </tr>
+        <tr>
+            <td>Mei</td>
+            <td>Dongguan</td>
+            <td>Badminton</td>
+            <td><a href="mailto:mei@example.com">mei@example.com</a></td>
+        </tr>
+        <tr>
+            <td>Sam</td>
+            <td>San José</td>
+            <td>Baseball</td>
+            <td><a href="mailto:sam@example.com">sam@example.com</a></td>
+        </tr>
+    </table>
+    <p class="add">Related tasks: 1.8.1–1.8.5</p>
+    
+    <h2 id="s">6) Basic Styling & Colors</h2>
+    <p>Below are simple color examples using inline styles (Unit 1 level):</p>
+    <div style="color: white;">
+        <span style="background-color: #1f6feb;">#1f6feb</span>
+        <span style="background-color: #10b981;">#10b981</span>
+        <span style="background-color: #f59e0b;">#f59e0b</span>
+        <span style="background-color: #ef4444;">#ef4444</span>
+    </div>
+    Simple gradient example:
+    <div style="background: linear-gradient(90deg, rgb(56,109,226), rgb(116,62,229)); width: 100%; height: 30px;"></div>
+    <p class="add">Related tasks: 1.9.1–1.9.6, 1.10.1–1.10.7</p>
+    
+    <h2 id="su">7) Summary: Structuring a Website</h2>
+    <ul>
+        <li>Use clear headings for each section.</li>
+        <li>Organize content logically (text, links, images, lists, tables).</li>
+        <li>Apply consistent, basic styling and color.</li>
+        <li>Include helpful internal links (bookmarks) on longer pages.</li>
+        <li>Respect copyright and give attribution when needed.</li>
+    </ul>
+    <a href="#top">Back to top</a>
+    <p class="add">Related tasks: 1.11.1–1.11.3</p>
+</body>
+</html>
