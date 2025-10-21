@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>黑页闪光演示</title>
+<style>
+  html,body {
+    height: 100%;
+    margin: 0;
+    background: #000;
+    color: #fff;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container {
+    text-align: center;
+    max-width: 800px;
+    padding: 1rem;
+  }
+
+  #flash {
+    position: fixed;
+    inset: 0;
+    background: #fff;
+    opacity: 0;
+    pointer-events: none;
+    mix-blend-mode: screen; 
+  }
+
+  /* 动画：总时长 1.75s；0-0.25s 淡入到不透明，0.25-1.75s 淡出回透明（原来为 3.5s/0.5s） */
+  @keyframes flashAnim {
+    0%   { opacity: 0; }
+    14.285% { opacity: 1; } /* 0.25/1.75 = 14.285% */
+    100% { opacity: 0; }
+  }
+
+  .flash-anim {
+    animation: flashAnim 1.75s ease forwards;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .flash-anim { animation: none !important; }
+    #flash { display: none !important; }
+    .reduced-motion-note { display: block; color: #ccc; margin-top: 1rem; }
+  }
+
+  .reduced-motion-note { display: none; font-size: 0.9rem; color: #bbb; }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>黑页闪光演示</h1>
+    <p>页面背景为黑色。将在页面加载后于第 1.5 秒、3.5 秒和 5.25 秒出现短暂闪光（0.25s 淡入，1.5s 淡出）。</p>
+    <p class="reduced-motion-note">已检测到“减少动画”偏好，闪光已禁用。</p>
+  </div>
+
+  <div id="flash" aria-hidden="true"></div>
+
+  <script>
+    const reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if (!reduced) {
+      const flash = document.getElementById('flash');
+
+      function triggerFlashAfter(ms) {
+        setTimeout(() => {
+          flash.classList.remove('flash-anim');
+          void flash.offsetWidth;
+          flash.classList.add('flash-anim');
+        }, ms);
+      }
+      flash.addEventListener('animationend', () => flash.classList.remove('flash-anim'));
+
+      triggerFlashAfter(2000);
+      triggerFlashAfter(3500);
+      triggerFlashAfter(4000);
+    }
+  </script>
+</body>
+</html>
