@@ -1,0 +1,44 @@
+body{
+    background-color: aliceblue;
+    color: dimgray;
+}
+#whateveriwant{
+    color: darkorange;
+    font-weight: bold;
+    background-color: purple;
+}
+p.class_selector{
+    color: teal;
+    font-style: italic;
+    background-color: lightgray;
+    transition: all .3s ease-out;
+}
+p.class_selector:hover{
+    color: white;
+    background-color: black;
+    font-size: 18px;
+}
+p.class_selector:active{
+    color: yellow;
+    background-color: navy;
+}
+ul{
+    background-color: lightgreen;
+    border-radius: 8px;
+}
+li:nth-child(2n+1){
+    background-color: orange;
+}
+li:last-child{
+    font-weight: bold;
+}
+li:first-child{
+    font-style: italic;
+}
+li:hover{
+    background-color: yellow;
+}
+li:active{
+    background-color: red;
+    color: white;
+}
