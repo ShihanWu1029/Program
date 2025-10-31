@@ -1,0 +1,35 @@
+p{
+    color: #B8C1CC;
+}
+h1{
+    color: #E94F37;
+}
+h2{
+    color: #DED891;
+}
+body{
+    background-color: #101935;
+    /* background-color: #3570AC; */
+    text-align: center;
+}
+div{
+    background-color: #4E6A57;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0px;
+}
+body{
+    /* font-family: 'Times New Roman', Times, serif; */
+    font-family: JetBrains Mono;
+}
+img{
+    margin: auto;
+}
+footer{
+    color: #B8C1CC;
+    margin-top: 20px;
+    padding: 10px 0 0 0;
+    border-top: #B8C1CC 1px solid;
+    font-family: 'Times New Roman', Times, serif;
+}
